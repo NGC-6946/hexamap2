@@ -283,7 +283,7 @@ namespace hexamap.Nézet
                 updatePictureBox = true;
             }
 
-            if (_model.Round == 1)
+            if (_model.Round == 0)
             {
                 _model.JatekosDobottZeroRound(num1, num2);
             }
