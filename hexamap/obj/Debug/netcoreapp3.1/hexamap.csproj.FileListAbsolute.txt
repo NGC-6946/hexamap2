@@ -1,0 +1,30 @@
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.csprojAssemblyReference.cache
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.Nézet.View.resources
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.csproj.GenerateResource.cache
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.AssemblyInfoInputs.cache
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.AssemblyInfo.cs
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.csproj.CoreCompileInputs.cache
+C:\Users\meszi\source\repos\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.exe
+C:\Users\meszi\source\repos\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.deps.json
+C:\Users\meszi\source\repos\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.runtimeconfig.json
+C:\Users\meszi\source\repos\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.runtimeconfig.dev.json
+C:\Users\meszi\source\repos\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.dll
+C:\Users\meszi\source\repos\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.pdb
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.dll
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.pdb
+C:\Users\meszi\source\repos\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.genruntimeconfig.cache
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.exe
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.deps.json
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.runtimeconfig.json
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.runtimeconfig.dev.json
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.dll
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\bin\Debug\netcoreapp3.1\hexamap.pdb
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.csprojAssemblyReference.cache
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.Nézet.View.resources
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.csproj.GenerateResource.cache
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.AssemblyInfoInputs.cache
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.AssemblyInfo.cs
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.csproj.CoreCompileInputs.cache
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.dll
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.pdb
+C:\Users\meszi\OneDrive\ELTE-IK\4. félév\Szoftvertechnológia\hexamap\hexamap\obj\Debug\netcoreapp3.1\hexamap.genruntimeconfig.cache
