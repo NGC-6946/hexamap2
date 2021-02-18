@@ -30,9 +30,8 @@ namespace hexamap.Modell
         private int _round; //körök számlálója
         private int _currentPlayer;
         private (int,int) _kezdoJatekos; //hanyadik játékos, mennyit dobott
-        //az első körben legnagyobbat dobó játékos sorszáma, és hogy mennyit dobott
-        private List<int> _vertices; // 0 - üres, 1 - település, 2 - város
-        //private List<Road> _roads; //csúcspárokat tartalmaz, a 2 csúcs által meghatározott szakasz az út
+       // private List<int> _vertices; // 0 - üres, 1 - település, 2 - város
+     
         private Boolean _canBuildRoad;
         private Boolean _canBuildSettlement;
         private Boolean _canBuildCity;
@@ -42,7 +41,7 @@ namespace hexamap.Modell
 
         public GameTable Table { get { return _table; } }
         public List<Hexagon> Hexagons { get { return _hexagons; } }
-       // public List<Road> Roads { get { return _roads; } }
+      
         public int Round { get { return _round; } }
         public int CurrentPlayer { get { return _currentPlayer; } }
 
@@ -53,9 +52,6 @@ namespace hexamap.Modell
         public bool CanBuildCity { get => _canBuildCity; set => _canBuildCity = value; }
         public List<Player> Players { get { return _players; } }
 
-        // public Boolean CanRefreshRoad { get; set; }
-
-
         public event EventHandler<GameEventArgs> GameChanged;
         public event EventHandler<GameEventArgs> GameOver;
         public event EventHandler<GameEventArgs> ZeroRoundFinished;
@@ -65,7 +61,7 @@ namespace hexamap.Modell
             _hexagons = new List<Hexagon>();
             _table = new GameTable();
             _players = new List<Player>();
-            _vertices = new List<int>();
+        
             _round = 0;
             for (int i = 0; i < _numOfPlayers; i++  )
             {
@@ -73,18 +69,11 @@ namespace hexamap.Modell
             }
             _currentPlayer = 0;
             _kezdoJatekos = (1, 0);
-           // _roads = new List<Road>();
-
-            for(int i = 0; i < 54; i++)
-            {
-                _vertices.Add(i);
-            }
 
             _canBuildRoad = false;
             _canBuildSettlement = false;
             _canBuildCity = false;
             _selectedPoint = (-1,-1);
-            //CanRefreshRoad = true;
 
     }
 
@@ -140,7 +129,7 @@ namespace hexamap.Modell
                 {
                     OnZeroRoundFinished();
                     _currentPlayer = _kezdoJatekos.Item1;
-                   // Debug.WriteLine("finished");
+                  
                 }
 
                 /*végigmegyünk minden játékoson
@@ -173,14 +162,6 @@ namespace hexamap.Modell
 
                     }
 
-                    /*for(int i = 0; i < _players.Count ; i++)
-                    {
-                       Debug.WriteLine(i + ".játékos kártyái:");
-                        _players[i].Cards.ForEach(x => Debug.WriteLine(x));
-                        Debug.WriteLine(i + ".települései:");
-                        _players[i].Settlements.ForEach(x => Debug.WriteLine(x.Item1 + "," + x.Item2));
-                    }*/
-
                 }
             }
             OnGameChanged();
@@ -190,7 +171,6 @@ namespace hexamap.Modell
         //az 0. körben a játék léptetése
         public void JatekosDobottZeroRound(int num1, int num2)
         {
-           // Debug.WriteLine(_currentPlayer + ": " + (num1+num2));
             if(_currentPlayer <= _numOfPlayers)
             {
                 if (num1 + num2 > _kezdoJatekos.Item2)
@@ -229,7 +209,7 @@ namespace hexamap.Modell
             {
                 _selectedPoint.Item1 = x;
                 _selectedPoint.Item2 = y;
-              //  Debug.WriteLine("sel:" + x + "," + y);
+              
             }
             else
             {
@@ -242,15 +222,13 @@ namespace hexamap.Modell
                 _selectedPoint.Item1 = -1;
                 _selectedPoint.Item2 = -1;
                 _canBuildRoad = false;
-               // Debug.WriteLine("end:" + x + "," + y);
-                //CanRefreshRoad = true;
                
                 OnGameChanged();
             }
         }
 
-        //bemenet: egy pont
-        //kimenet: azoknak a hatszögeknek a sorszáma, melyek tartalmazzák az adott pontot
+      
+        //visszad egy listát azoknak a hatszögekneknek a sorszámával, melyek tartalmazzák az adott pontot
         private List<int> whichHexagons(int x, int y)
         {
             List<int> hexagons = new List<int>();

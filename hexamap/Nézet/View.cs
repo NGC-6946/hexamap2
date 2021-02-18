@@ -128,16 +128,6 @@ namespace hexamap.Nézet
 
         private void map_MouseClick(object sender, MouseEventArgs e)
         {
-
-          //Debug.WriteLine(whichHexagons(e.X,e.Y));
-           // whichHexagons(e.X, e.Y).ForEach(x => Debug.WriteLine(x));
-            
-            /*Bitmap b = new Bitmap(pictureBox1.ClientSize.Width, pictureBox1.Height);
-            pictureBox1.DrawToBitmap(b, pictureBox1.ClientRectangle);
-            Color colour = b.GetPixel(e.X, e.Y);
-            b.Dispose();*/
-
-            
             for (int i = 0; i < 19; i++)
             {
                 foreach (PointF point in _model.Hexagons[i].Points)
@@ -187,36 +177,7 @@ namespace hexamap.Nézet
 
         }
 
-       /* public bool isVertex(int x, int y)
-        {
-            for (int i = 0; i < 19; i++)
-            {
-               foreach(PointF point in _model.Hexagons[i].Points)
-               {
-                  if(Math.Pow((x - point.X),2) + Math.Pow((y - point.Y) , 2) <= radOfCircles*radOfCircles)
-                  {
-                        return true;
-                  }
-                
-               }
-            }
 
-            return false;
-
-        }*/
-
-        //ha a kattintás helye fekete, akkor élre kattintottunk
-        /*bool onEdge(Color c)
-        {
-
-            if (c.R == 0 && c.G == 0 && c.B == 0)
-            {
-                return true;
-            }
-
-            return false;
-  
-        }*/
 
         private void View_Load(object sender, EventArgs e)
         {
@@ -279,11 +240,10 @@ namespace hexamap.Nézet
             this.Controls.Add(_layout);
 
             _settlementLabel = new Label();
-           // _settlementLabel.Anchor = AnchorStyles.None;
+
 
             _roadLabel = new Label();
 
-           // _roadLabel.Anchor = AnchorStyles.None;
             _cityLabel = new Label();
 
             _gabonaLabel = new Label();
@@ -349,7 +309,7 @@ namespace hexamap.Nézet
 
             _currentPlayerLabel.Text = "játékos: " + (e.CurrentPlayer+1);
             _roundCounter.Text = e.Round+".kör";
-            // játékidő frissítése
+          
             if (updatePictureBox)
             {
                 pictureBox1.Refresh();
@@ -376,26 +336,6 @@ namespace hexamap.Nézet
                 updatePictureBox = true;
             }
         }
-
-
-        //visszaad egy olyan listát, ami azoknak a hexagonoknak az indexeit tartalmazza, melyekhez a paraméterként megadott csúcs tartozik
-        /*public List<int> whichHexagons(int x, int y)
-        {
-            List<int> hexagons = new List<int>();
-            for (int i = 0; i < 19; i++)
-            {
-                foreach (PointF point in _model.Hexagons[i].Points)
-                {
-                    if (Math.Pow((x - point.X), 2) + Math.Pow((y - point.Y), 2) <= radOfCircles * radOfCircles)
-                    {
-                        hexagons.Add(i);
-                    }
-
-                }
-            }
-
-            return hexagons;
-        }*/
 
         private Color ChooseColorForPlayer(int player)
         {

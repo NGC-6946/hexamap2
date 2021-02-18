@@ -5,9 +5,7 @@ using System.Diagnostics;
 using System.Text;
 
 namespace hexamap.Perzisztencia
-{
-   // public enum Field { Gabona, Erc, Fa, Tegla, Legelo, Sivatag }
-   // public enum Product { Gabona, Erc, Fa, Tegla, Gyapju }
+{ 
 
     public class GameTable
     {
