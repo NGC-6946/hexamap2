@@ -132,10 +132,10 @@ namespace hexamap.Nézet
           //Debug.WriteLine(whichHexagons(e.X,e.Y));
            // whichHexagons(e.X, e.Y).ForEach(x => Debug.WriteLine(x));
             
-            Bitmap b = new Bitmap(pictureBox1.ClientSize.Width, pictureBox1.Height);
+            /*Bitmap b = new Bitmap(pictureBox1.ClientSize.Width, pictureBox1.Height);
             pictureBox1.DrawToBitmap(b, pictureBox1.ClientRectangle);
             Color colour = b.GetPixel(e.X, e.Y);
-            b.Dispose();
+            b.Dispose();*/
 
             
             for (int i = 0; i < 19; i++)

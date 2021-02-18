@@ -22,7 +22,7 @@ namespace hexamap.Perzisztencia
 
         }
 
-        public void init()
+        private void init()
         {
             _fieldNumbers = new List<int>();
             _fieldResources = new List<Field>();
